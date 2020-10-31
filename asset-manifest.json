@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/color-cart/static/css/main.3c9cd770.chunk.css",
+    "main.js": "/color-cart/static/js/main.f85e8479.chunk.js",
+    "main.js.map": "/color-cart/static/js/main.f85e8479.chunk.js.map",
+    "runtime-main.js": "/color-cart/static/js/runtime-main.39c89043.js",
+    "runtime-main.js.map": "/color-cart/static/js/runtime-main.39c89043.js.map",
+    "static/js/2.1b38e4dd.chunk.js": "/color-cart/static/js/2.1b38e4dd.chunk.js",
+    "static/js/2.1b38e4dd.chunk.js.map": "/color-cart/static/js/2.1b38e4dd.chunk.js.map",
+    "index.html": "/color-cart/index.html",
+    "precache-manifest.1f9b0ad1d42540cabfbc25d02a408699.js": "/color-cart/precache-manifest.1f9b0ad1d42540cabfbc25d02a408699.js",
+    "service-worker.js": "/color-cart/service-worker.js",
+    "static/css/main.3c9cd770.chunk.css.map": "/color-cart/static/css/main.3c9cd770.chunk.css.map",
+    "static/js/2.1b38e4dd.chunk.js.LICENSE.txt": "/color-cart/static/js/2.1b38e4dd.chunk.js.LICENSE.txt",
+    "static/media/cart.39a60626.svg": "/color-cart/static/media/cart.39a60626.svg",
+    "static/media/newEngen.56b04b4c.svg": "/color-cart/static/media/newEngen.56b04b4c.svg",
+    "static/media/trashCan.6068cc1f.svg": "/color-cart/static/media/trashCan.6068cc1f.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.39c89043.js",
+    "static/js/2.1b38e4dd.chunk.js",
+    "static/css/main.3c9cd770.chunk.css",
+    "static/js/main.f85e8479.chunk.js"
+  ]
+}
