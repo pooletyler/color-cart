@@ -1,0 +1,90 @@
+import React, { FC, useEffect, useState } from 'react';
+import { Router, Switch, Route } from 'react-router-dom';
+import { useQuery } from '@apollo/client';
+import getCookie from '../../utils/getCookie';
+import setCookie from '../../utils/setCookie';
+import Navbar from '../../components/Navbar/Navbar';
+import colorQuery from './colorQuery';
+import List from '../List/List';
+import history from './history';
+import './Routes.scss';
+import Cart from '../Cart/Cart';
+
+const Routes: FC<any> = () => {
+  const [colors, setColors] = useState([]);
+  const [selectedColors, setSelectedColors] = useState([]);
+  const [resultOffset, setResultOffset] = useState(20);
+
+  useQuery(colorQuery, {
+    variables: {
+      resultOffset,
+    },
+    onCompleted: (data: { colors: { hex: string }[] }) => {
+      setColors(
+        colors.concat(
+          data.colors.map((color: { hex: string }) => {
+            return color.hex;
+          })
+        )
+      );
+    },
+  });
+
+  useEffect(() => {
+    setSelectedColors(JSON.parse(getCookie('inCart')));
+  }, []);
+
+  useEffect(() => {
+    setCookie('inCart', JSON.stringify(selectedColors), 10);
+  }, [selectedColors]);
+
+  const handleOnNavbarCartClick = () => {
+    window.location.href = '/cart';
+  };
+
+  const handleOnNavbarNewEngenClick = () => {
+    window.location.href = '/';
+  };
+
+  const handleOnLoadMore = () => {
+    setResultOffset(resultOffset + 14);
+  };
+
+  return (
+    <Router history={history}>
+      <div className="Routes--container">
+        <Navbar
+          numberOfSelectedColors={selectedColors.length}
+          onNewEngenClick={handleOnNavbarNewEngenClick}
+          onCartClick={handleOnNavbarCartClick}
+        />
+        <Switch>
+          <Route
+            exact
+            path="/"
+            render={() => (
+              <List
+                colors={colors}
+                selectedColors={selectedColors}
+                setSelectedColors={setSelectedColors}
+                onLoadMore={handleOnLoadMore}
+              />
+            )}
+          />
+          <Route
+            exact
+            path="/cart"
+            render={() => (
+              <Cart
+                selectedColors={selectedColors}
+                setSelectedColors={setSelectedColors}
+              />
+            )}
+          />
+        </Switch>
+      </div>
+    </Router>
+  );
+};
+
+export default Routes;

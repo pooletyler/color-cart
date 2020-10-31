@@ -1,0 +1,41 @@
+.Cart--title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #282828;
+  letter-spacing: 0;
+  margin: 40px 0 20px 20px;
+}
+
+.Cart--description {
+  font-size: 16px;
+  font-weight: 600;
+  color: #282828ce;
+  letter-spacing: 0;
+  margin: 40px 0 20px 20px;
+}
+
+.Cart--swatches {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-left: 10px;
+}
+
+.Cart--swatch {
+  margin: 10px;
+}
+
+.Cart--controls {
+  display: flex;
+  margin: 20px;
+}
+
+.Cart--controlsButton {
+  margin-left: 10px;
+}
+
+.Cart--divider {
+  margin: 50px 20px 10px 20px;
+  max-width: 710px;
+  border: 1px solid #d5d5d5;
+}

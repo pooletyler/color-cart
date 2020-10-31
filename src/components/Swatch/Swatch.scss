@@ -1,0 +1,25 @@
+.Swatch--container {
+  display: flex;
+  position: relative;
+  width: 123px;
+  height: 122px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.Swatch--trash {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.Swatch--text {
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: 0;
+  margin: auto;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5),
+    -1px 1px 0 rgba(0, 0, 0, 0.5), 1px 1px 0 rgba(0, 0, 0, 0.5);
+}

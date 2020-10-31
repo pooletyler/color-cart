@@ -1,0 +1,14 @@
+.Button--container {
+  height: 40px;
+  padding: 0 25px;
+  background: #1e4091;
+  border-radius: 22.5px;
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: 0;
+  text-align: center;
+  cursor: pointer;
+  &:hover {
+    background: #1e4091;
+  }
+}

@@ -1,0 +1,27 @@
+.Navbar--container {
+  display: flex;
+  width: 100vw;
+  height: 60px;
+  background-color: #1e4091;
+  justify-content: space-between;
+}
+
+.Navbar--icon {
+  margin: auto 0;
+  cursor: pointer;
+}
+
+.Navbar--newEngen {
+  margin-left: 20px;
+}
+
+.Navbar--cart {
+  position: relative;
+  margin-right: 20px;
+}
+
+.Navbar--cartBadge {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+}

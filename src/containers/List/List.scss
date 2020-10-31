@@ -1,0 +1,20 @@
+.List--container {
+  overflow: scroll;
+  padding-top: 10px;
+}
+
+.List--swatches {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.List--swatch {
+  margin: 10px;
+}
+
+.List--button {
+  display: flex;
+  margin: 20px 0;
+  justify-content: center;
+}
