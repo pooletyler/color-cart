@@ -1,6 +1,7 @@
 import React, { FC, useEffect, useState } from 'react';
 import { Router, Switch, Route } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
+import checkForSelectedColors from '../../utils/checkForSelectedColors';
 import getCookie from '../../utils/getCookie';
 import setCookie from '../../utils/setCookie';
 import Navbar from '../../components/Navbar/Navbar';
@@ -31,7 +32,7 @@ const Routes: FC<any> = () => {
   });
 
   useEffect(() => {
-    setSelectedColors(JSON.parse(getCookie('inCart')));
+    checkForSelectedColors(getCookie, setSelectedColors);
   }, []);
 
   useEffect(() => {
