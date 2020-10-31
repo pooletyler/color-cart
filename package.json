@@ -2,6 +2,7 @@
   "name": "color-cart",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://pooletyler.github.io/color-cart",
   "dependencies": {
     "@apollo/client": "^3.2.5",
     "@testing-library/jest-dom": "^4.2.4",
@@ -11,6 +12,7 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "gh-pages": "^3.1.0",
     "graphql": "^15.4.0",
     "history": "^5.0.0",
     "node-sass": "^4.14.1",
@@ -22,6 +24,8 @@
     "typescript": "~3.7.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
