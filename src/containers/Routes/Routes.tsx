@@ -1,5 +1,5 @@
 import React, { FC, useEffect, useState } from 'react';
-import { Router, Switch, Route } from 'react-router-dom';
+import { HashRouter, Switch, Route } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import checkForSelectedColors from '../../utils/checkForSelectedColors';
 import getCookie from '../../utils/getCookie';
@@ -40,11 +40,11 @@ const Routes: FC<any> = () => {
   }, [selectedColors]);
 
   const handleOnNavbarCartClick = () => {
-    window.location.href = '/cart';
+    window.location.hash = '/cart';
   };
 
   const handleOnNavbarNewEngenClick = () => {
-    window.location.href = '/';
+    window.location.hash = '/';
   };
 
   const handleOnLoadMore = () => {
@@ -52,7 +52,7 @@ const Routes: FC<any> = () => {
   };
 
   return (
-    <Router history={history}>
+    <HashRouter history={history}>
       <div className="Routes--container">
         <Navbar
           numberOfSelectedColors={selectedColors.length}
@@ -84,7 +84,7 @@ const Routes: FC<any> = () => {
           />
         </Switch>
       </div>
-    </Router>
+    </HashRouter>
   );
 };
 
