@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/color-cart/static/css/main.3c9cd770.chunk.css",
-    "main.js": "/color-cart/static/js/main.f85e8479.chunk.js",
-    "main.js.map": "/color-cart/static/js/main.f85e8479.chunk.js.map",
+    "main.js": "/color-cart/static/js/main.58477d8e.chunk.js",
+    "main.js.map": "/color-cart/static/js/main.58477d8e.chunk.js.map",
     "runtime-main.js": "/color-cart/static/js/runtime-main.39c89043.js",
     "runtime-main.js.map": "/color-cart/static/js/runtime-main.39c89043.js.map",
     "static/js/2.1b38e4dd.chunk.js": "/color-cart/static/js/2.1b38e4dd.chunk.js",
     "static/js/2.1b38e4dd.chunk.js.map": "/color-cart/static/js/2.1b38e4dd.chunk.js.map",
     "index.html": "/color-cart/index.html",
-    "precache-manifest.1f9b0ad1d42540cabfbc25d02a408699.js": "/color-cart/precache-manifest.1f9b0ad1d42540cabfbc25d02a408699.js",
+    "precache-manifest.3b32d1e4a0c079eb63fe7c420f8c5aa6.js": "/color-cart/precache-manifest.3b32d1e4a0c079eb63fe7c420f8c5aa6.js",
     "service-worker.js": "/color-cart/service-worker.js",
     "static/css/main.3c9cd770.chunk.css.map": "/color-cart/static/css/main.3c9cd770.chunk.css.map",
     "static/js/2.1b38e4dd.chunk.js.LICENSE.txt": "/color-cart/static/js/2.1b38e4dd.chunk.js.LICENSE.txt",
@@ -20,6 +20,6 @@
     "static/js/runtime-main.39c89043.js",
     "static/js/2.1b38e4dd.chunk.js",
     "static/css/main.3c9cd770.chunk.css",
-    "static/js/main.f85e8479.chunk.js"
+    "static/js/main.58477d8e.chunk.js"
   ]
 }
