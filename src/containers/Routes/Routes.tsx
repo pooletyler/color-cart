@@ -43,7 +43,7 @@ const Routes: FC<any> = () => {
     window.location.hash = '/cart';
   };
 
-  const handleOnNavbarNewEngenClick = () => {
+  const handleOnNavbarHomeClick = () => {
     window.location.hash = '/';
   };
 
@@ -56,7 +56,7 @@ const Routes: FC<any> = () => {
       <div className="Routes--container">
         <Navbar
           numberOfSelectedColors={selectedColors.length}
-          onNewEngenClick={handleOnNavbarNewEngenClick}
+          onHomeClick={handleOnNavbarHomeClick}
           onCartClick={handleOnNavbarCartClick}
         />
         <Switch>

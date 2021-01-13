@@ -1,22 +1,22 @@
 import React, { FC } from 'react';
-import { ReactComponent as NewEngen } from '../../assets/ui/newEngen.svg';
+import { ReactComponent as Home } from '../../assets/ui/home.svg';
 import { ReactComponent as Cart } from '../../assets/ui/cart.svg';
 import './Navbar.scss';
 import Badge from '../Badge/Badge';
 
 interface Props {
   numberOfSelectedColors?: number;
-  onNewEngenClick?: () => void;
+  onHomeClick?: () => void;
   onCartClick?: () => void;
 }
 
 const Navbar: FC<Props> = (props: Props) => {
-  const { numberOfSelectedColors, onNewEngenClick, onCartClick } = props;
+  const { numberOfSelectedColors, onHomeClick, onCartClick } = props;
 
   return (
     <div className="Navbar--container">
-      <div className="Navbar--icon Navbar--newEngen">
-        <NewEngen onClick={onNewEngenClick} />
+      <div className="Navbar--icon Navbar--home">
+        <Home onClick={onHomeClick} fill="#FFFFFF" height="30px" width="30px" />
       </div>
       <div className="Navbar--icon Navbar--cart">
         <div className="Navbar--cartBadge">
@@ -30,7 +30,7 @@ const Navbar: FC<Props> = (props: Props) => {
 
 Navbar.defaultProps = {
   numberOfSelectedColors: 0,
-  onNewEngenClick: () => {},
+  onHomeClick: () => {},
   onCartClick: () => {},
 };
 
